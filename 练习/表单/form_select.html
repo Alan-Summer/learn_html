@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单select</title>
+</head>
+<body>
+
+<h1 align="center">注册信息</h1>
+<hr color="#f2f2f2">
+<form>
+    <table width="600px" bgcolor="#a9a9a9" align="center" border="1">
+        <tr>
+            <td align="right">姓名:</td>
+            <td align="left"><input type="text" name="username" maxlength="10" value="admin" placeholder="例如:anle"></td>
+        </tr>
+        <tr>
+            <td align="right">邮箱:</td>
+            <td  align="left"><input type="text" name="email" placeholder="输入邮箱"></td>
+        </tr>
+        <tr>
+            <td align="right">密码:</td>
+            <td  align="left"><input type="password" name="pwd" maxlength="10" value="1234" placeholder="请输入密码"></td>
+        </tr>
+        <tr>
+            <td align="right">确认密码:</td>
+            <td  align="left"><input type="password" name="pwd" maxlength="10" value="1234" placeholder="请输入密码"></td>
+        </tr>
+        <tr>
+            <td align="right">上传文件:</td>
+            <td  align="left"><input type="file" name="uploadimg"></td>
+        </tr>
+        <tr>
+            <td align="right">性别:</td>
+            <td  align="left">
+                男<input type="radio" name="person" checked>
+                女<input type="radio" name="person">
+            </td>
+
+        </tr>
+        <tr>
+            <td align="right">爱好:</td>
+            <td  align="left">
+                RAP<input type="checkbox" name="like">
+                打篮球<input type="checkbox" name="like">
+                跳舞 <input type="checkbox" name="like">
+            </td>
+        </tr>
+
+        <tr>
+            <td align="right">城市:</td>
+            <td  align="left">
+                <select name="city" size="5" multiple>
+                    <option selected>请选择</option>
+                <option value="hb">湖北</option>
+                <option value="nj">南京</option>
+                <option value="hz">杭州</option>
+                <option value="bj">北京</option>
+                <option value="nmg">内蒙古</option>
+                <option value="zj">浙江</option>
+
+            </select>
+                <select name="city" size="5" multiple>
+                    <option selected>请选择</option>
+                    <optgroup label="g1">
+                        <option value="hb">湖北</option>
+                        <option value="nj">南京</option>
+                        <option value="hz">杭州</option>
+                    </optgroup>
+                    <optgroup label="g2">
+                        <option value="bj">北京</option>
+                        <option value="nmg">内蒙古</option>
+                        <option value="zj">浙江</option>
+                    </optgroup>
+
+
+                </select>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td align="right">
+                简介:
+
+            </td>
+            <td  >
+                <textarea name="jj" rows="5" cols="50"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center">
+                <input type="button" value="普通">
+                <input type="submit">
+                <input type="reset">
+                <br>
+                <input type="image" src="button.png">
+            </td>
+
+        </tr>
+
+        <tr>
+            <td ><input type="hidden" name="hidden" value="用户注册信息"></td>
+            <td  ></td>
+        </tr>
+
+    </table>
+
+</form>
+</body>
+</html>
